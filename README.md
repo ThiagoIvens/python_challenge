@@ -6,9 +6,7 @@ pip3 install pandas
 pip3 install mysql-connector-python
 ```
 
-# EXECUTE O PROJETO
-    
-    use (dentro da pasta do projeto):
+# EXECUTE O PROJETO:
 
 ```
 python3 main.py
