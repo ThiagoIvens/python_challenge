@@ -53,11 +53,10 @@ def insertOnDatabase(conn, cursor, obj):
     conn.commit()
     
 def deleteMoreThanOneMinute(conn, cursor):
-    # excluindo um registro da tabela
+    # excluindo os registros que tem mais de 1 minuto da tabela
     cursor.execute("DELETE FROM vehiclePos WHERE comunicacao < (NOW() - INTERVAL 1 MINUTE)")
 
 def saveToCSV(data):
-    # creating the DataFrame
     data = pd.DataFrame(data)
     data.to_csv("./data.csv")
     
